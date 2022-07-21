@@ -1,0 +1,18 @@
+particle {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 999;
+}
+
+.greened {
+  border-radius: 20px;
+  padding: 0;
+  min-width: 20px;
+}
+
