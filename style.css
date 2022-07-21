@@ -1,0 +1,454 @@
+
+@font-face{
+	src: url(fonts/OpenSans_Condensed-Regular.ttf);
+	font-family: Condensed;
+}
+
+@font-face{
+	src: url(fonts/OpenSans-Light.ttf);
+	font-family: OpenSans-Light;
+}
+
+html, body { overflow-x: hidden; }
+
+
+.my-nav{
+	z-index: 998;
+}
+
+.navbar-brand{
+	margin: 0 0 0 2em;
+}
+
+@media (max-width: 992px) {
+	.navbar-brand{
+		margin-left: 10px;
+		
+	}
+
+	.cart-btn{
+		position: relative;
+		left: -10px;
+	}
+}
+
+.hided{
+	display: none;
+}
+
+.honey-info{
+	position: relative;
+	top: 5px;
+	font-family: Condensed;
+	font-size: 35px !important;
+	line-height: 120%;
+	font-weight: 400;
+}
+
+.mycard {
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+  color: black;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.mycards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+  /* Screen larger than 600px? 2 column */
+  @media (min-width: 600px) {
+    .mycards { grid-template-columns: repeat(1, 1fr); }
+    
+  }
+
+  /* Screen larger than 900px? 3 columns */
+  @media (min-width: 900px) {
+    .mycards { grid-template-columns: repeat(3, 1fr); }
+ 		  }
+
+
+.honey{
+	text-transform: uppercase;
+	font-family: Condensed;
+	color: #F5BD12;
+	font-size: 45px !important;
+	font-weight: 700;
+}
+
+.hided{
+	display: none;
+}
+
+.honey-text{
+	font-family: OpenSans-Light;
+	font-size: 16px !important;
+	font-weight: 500;
+	}
+
+	.under-photo-text{
+		font-size: .8rem;
+		font-family: OpenSans-Light;
+		font-style: italic;
+	}
+
+.cart-counter-fl{
+	position: fixed;
+		bottom: 30px;
+		right: 65px;
+
+		font-size: 10px;
+    background: #28A008;
+    color: #fff;
+    padding: 0 5px;
+     border-radius: 8px;
+}
+
+
+.collapsible {
+  background-color: #09BB00;
+  justify-content: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+
+.activex:after{
+font-size: 20px;
+content: "Введіть дані в форму" !important;
+}
+
+
+.activex{
+  font-size: 0;
+  background-color: #0d6efd;
+  color: white;
+}
+
+
+
+/* Style the collapsible content. Note: hidden by default */
+.content-form {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-right: solid 1px;
+  border-left: solid 1px;
+  border-bottom: solid 1px;
+  border-color: #E5E5E5;
+}
+
+.star{
+	content: "*";
+	color: red;
+}
+
+
+.about-myself{
+	font-family: OpenSans-Light !important;
+}
+
+.container{
+        max-width: 1100px !important;
+}
+
+
+.shopping-cart-fl{
+		cursor: pointer;
+-webkit-filter: drop-shadow(5px 5px 5px #444444);
+  filter: drop-shadow(5px 5px 5px #444444);
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+ }
+
+.cart-counter{
+ font-size: 12px;
+    background: #28A008;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -10px; 
+    border-radius: 8px;
+}
+
+.cart-button{
+	background-color: #B96E1D;
+	height: 40px;
+	min-width: 80%;
+	color: white;
+	border: none;
+	text-align: center;
+	transition: all .2s ease-in-out;
+}
+
+.cart-button:hover{
+	transform: scale(1.1); 
+}
+
+
+.navbar-nav{
+	margin-right: 2em;
+}
+
+.navbar-toggler{
+	margin-right: 1em;
+}
+
+.shopping-cart{
+	padding-left: 20px;
+	cursor: pointer;
+}
+
+.product-card{
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	 border-radius: 0px !important; 
+}
+
+.card{
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+
+
+.tare-type{
+	font-size: 1rem;
+}
+
+.form-select{
+	max-width: 60%;
+	justify-content: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.product-price{
+	font-weight: 700;
+	text-shadow: 1px 1px 2px grey;
+	font-size: 1.6rem;
+	justify-content: center;
+}
+
+.product-price:after{
+	content: " грн";
+}
+
+.product-img{
+	 border-radius: 0px !important; 
+}
+
+/* (A) WRAPPER */
+.hoverwrap {
+  position: relative; /* required for (c2) */
+  max-width: 600px;   /* optional */
+}
+
+/* (B) RESPONSIVE IMAGE */
+
+
+/* (C) CAPTION */
+.hovercap {
+	color: white;
+	text-shadow: 1px 1px 2px black;
+  /* (C1) DIMENSIONS */
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+ 
+  /* (C2) PLACE AT BOTTOM */
+  position: absolute;
+  bottom: 0; left: 0;
+ 
+  /* (C3) COLORS */
+	background: linear-gradient(rgba(0, 0, 0, 0.0),
+	 rgba(0, 0, 0, .8));
+  color: white;
+}
+
+/* (D) SHOW/HIDE */
+.hovercap {
+  visibility: none; opacity: 0;
+  transition: opacity 0.3s;
+}
+.hoverwrap:hover .hovercap {
+  visibility: visible; opacity: 1;
+}
+
+
+#fixed{
+	height: 100px;
+	background: url("img/honeycomb1.jpg") no-repeat center center fixed;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+}
+
+.my-header{
+	position: absolute;
+	margin-top: 25px;
+	 position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 1100px; 
+}
+
+.carousel-caption {
+	width: 400px;
+	top: 33%;
+	left: 100%;
+}
+
+.my-caption{
+	font-family: 'Segoe UI';
+	text-transform: uppercase;
+	font-size: 60px;
+	font-weight: 600;
+	line-height: 100%;
+	color: rgba(255, 255, 255, 0.7);
+	-webkit-animation: rise 2s;
+	-o-animation: rise 2s;
+	animation: rise 2s;
+}
+
+.hover-zoom{
+	transition: transform .2s;
+}
+
+.hover-zoom:hover {
+	transform: scale(1.09); 
+}
+
+/* SHIFT */
+.shift ul li a {
+  position:relative;
+  z-index: 1;
+}
+.shift ul li a:hover {
+  color: #91640F;
+}
+.shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #F5BD12;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+
+.contact-text{
+	color: white;
+}
+
+.text-text-50{
+	color: white;
+		text-shadow: 1px 1px 10px Gainsboro;
+}
+
+.emailHelp{
+	color: grey;
+	font-size: 12px !important;
+	font-style: italic !important;
+}
+
+.carousel-inner .carousel-item > img {
+	-webkit-animation: thing 20s;
+	-o-animation: thing 20s;
+	animation: thing 20s;
+}
+
+.font-class{
+font-family: "Segoe", sans-serif;
+font-size: 40px;
+}
+
+.font-incr{
+font-family: "Segoe", sans-serif;
+font-size: 60px;
+}
+
+
+.myimg{
+	background-image: url(img/smoke.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-bottom: 250px;
+   background-size: cover;
+}
+
+
+@keyframes thing {
+	from {
+		transform: scale(1, 1);
+	}
+	to {
+		transform: scale(1.5, 1.5);
+	}
+}
+
+@keyframes rise{
+	from { transform : translateY(3em) }
+	to   { transform : translateY(0em) }
+}
+
+ @font-face {
+ 	font-family: "Segoe";
+ 	src: url(fonts/bb.ttf); 
+ }
+
+
+.constant-tilt-shake {
+  animation: tilt-shaking 0.5s infinite;
+}
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-2deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+.floatingCart.cartHided{
+	display: none;
+	}
+
+
+
+
+
+
