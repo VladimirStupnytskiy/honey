@@ -36,6 +36,14 @@ html, body { overflow-x: hidden; }
 	display: none;
 }
 
+.decor-photo{
+	transition: transform .2s;
+}
+
+.decor-photo:hover{
+	transform: scale(1.02);
+}
+
 .honey-info{
 	position: relative;
 	top: 5px;
