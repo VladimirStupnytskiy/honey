@@ -77,7 +77,8 @@ html, body { overflow-x: hidden; }
   /* Screen larger than 900px? 3 columns */
   @media (min-width: 900px) {
     .mycards { grid-template-columns: repeat(3, 1fr); }
- 		  }
+ 	}
+
 
 
 .honey{
